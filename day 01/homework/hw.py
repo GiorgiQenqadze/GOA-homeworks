@@ -8,7 +8,7 @@ surname = "qenqadze"
 #პრინტ ფუნქციას გადაეცემა ეკრანზე გამოსატანი ობიექტი
 name = "giorgi" 
 age = 13
-haight = "166.5"
+haight = 166.5
 knows_programming = True
 live_in="didi_digomi"
 is_Ugly = False
