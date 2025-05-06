@@ -1,0 +1,79 @@
+<!-- შექმენით ერთგვერდიანი საიტი თავისუფალ თემაზე. გამოიყენეთ ყველა ნასწავლი მასალა, მათ შორის ფორმებიც. შეეცადეთ ახსნათ ყველაფერი კომენტარებით.-->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>მოგზაურობა საქართველოში</title>
+</head>
+<body>
+
+  <!-- მთავარი სათაური -->
+  <h1>მოგზაურობა საქართველოში</h1>
+
+  <!-- შესავალი აბზაცი -->
+  <p>საქართველო საოცარი ქვეყანაა ულამაზესი მთებით, ისტორიული ადგილებითა და გემრიელი სამზარეულოთი. თუ მოგზაურობა გიყვარს, აუცილებლად უნდა ეწვიო საქართველოს სხვადასხვა კუთხეს.</p>
+
+  <!-- სურათი -->
+  <img src="https://tse3.mm.bing.net/th?id=OIP.X8nivmQByEikiFmkG7Cv9gHaEK&pid=Api&P=0&h=220" width="400">
+
+  <!-- პოპულარული ადგილების სია -->
+  <h2>პოპულარული ტურისტული ადგილები:</h2>
+  <ul>
+    <li>საფრანგეთი</li>
+    <li>ყაზბეგი</li>
+    <li>სვანეთი</li>
+    <li>ბორჯომი</li>
+    <li>სიღნაღი</li>
+    <li>თბილისი</li>
+  </ul>
+
+  <!-- განყოფილება მომხმარებლის მოსაზრებისთვის -->
+  <h2>დაგვიტოვე შენი მოგზაურობის გეგმა</h2>
+
+  <!-- ფორმა მონაცემების შესაყვანად -->
+  <form action="/submit" method="POST">
+
+    <!-- მომხმარებლის სახელი -->
+    <label for="name">სახელი:</label>
+    <input type="text" id="name" name="name" placeholder="Enter here" required>
+
+    <!-- მომხმარებლის ელ-ფოსტა -->
+    <label for="email">ელ-ფოსტა:</label>
+    <input type="email" id="email" name="email" placeholder="Enter here" required>
+
+    <!-- მოგზაურობის თარიღი -->
+    <label for="date">გამგზავრების თარიღი:</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- მოგზაურობის ტიპის არჩევა (radio) -->
+    <p>რა ტიპის მოგზაურობა გსურს?</p>
+    <input type="radio" id="adventure" name="travel_type" value="adventure" required>
+    <label for="adventure">თავგადასავლური</label><br>
+
+    <input type="radio" id="relax" name="travel_type" value="relaxation">
+    <label for="relax">დასასვენებელი</label><br>
+
+    <!-- checkbox - ინტერესების მითითება -->
+    <p>რა გინდა რომ ნახო?</p>
+    <input type="checkbox" id="nature" name="interest_nature" value="yes">
+    <label for="nature">ბუნება</label><br>
+
+    <input type="checkbox" id="culture" name="interest_culture" value="yes">
+    <label for="culture">კულტურა</label><br>
+
+    <input type="checkbox" id="food" name="interest_food" value="yes">
+    <label for="food">ქართული სამზარეულო</label><br>
+
+    <!-- შეტყობინება (textarea) -->
+    <label for="message">შენი შეტყობინება:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="დაწერე შენიშვნა ან შეკითხვა..."></textarea><br><br>
+
+    <!-- გაგზავნის ღილაკი -->
+    <input type="submit" value="გაგზავნა">
+  </form>
+
+</body>
+</html>

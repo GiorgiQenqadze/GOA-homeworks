@@ -1,0 +1,19 @@
+<!-- შექმენით პროდუქტების დამატების ფორმა. მომხარებელს შემოატანინეთ პროდუქტის სახელი, მისი ფასი და გამოშვების თარიღი.-->
+
+
+
+
+<form action="/add-product" method="POST">
+    <h2>პროდუქტის დამატება</h2>
+  
+    <label for="productName">პროდუქტის სახელი:</label><br>
+    <input type="text" id="productName" name="product_name" placeholder="აქ ჩაწერეთ" required><br><br>
+  
+    <label for="productPrice">ფასი</label><br>
+    <input type="number" id="productPrice" name="product_price" placeholder="აქ ჩაწერეთ" required><br><br>
+  
+    <label for="releaseDate">გამოშვების თარიღი:</label><br>
+    <input type="date" id="releaseDate" name="release_date" required><br><br>
+  
+    <input type="submit" value="პროდუქტის დამატება">
+  </form>
