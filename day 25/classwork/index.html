@@ -1,0 +1,45 @@
+<!-- 1) შექმენით სარეგისტრაციო ფორმა, სადაც მომხმარებელს შემოატანინებთ სახელს, ემაილს, პაროლს, გენდერს(უნდა ჰქონდეს ორი
+არჩევანის უფლება male/female). დაამატეთ ერთი checkbox-ი, რომლითაც მომხმარებელი დაეთანხმება საიტის წესებს.
+თითოეული input-ის შევსება/არჩევა უნდა იყოს აუცილებელი. ასევე თითოეულ input-ს გაუწერეთ თავისი ეტიკეტი(label). -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+        <form>
+            <h1>Registration form</h1>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <br>
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" required>
+            <br>
+<br>
+            <label for="paroli">Enter your password: </label>
+            <input type="password" name="paroli" required>
+            <br>
+            <br>
+            <label>gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+
+            <label for="female">Female</label><br><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree the rules</label><br><br>
+
+            <button>Register</button>
+
+
+        </form>
+    </body>
+</html>
