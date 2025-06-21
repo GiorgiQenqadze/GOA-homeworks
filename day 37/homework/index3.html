@@ -1,0 +1,81 @@
+<!--sia 3-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Table Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 6px;
+      vertical-align: top;
+    }
+    .nested-table {
+      width: 100%;
+      border: 1px solid #000;
+    }
+    .nested-table th, .nested-table td {
+      border: 1px solid #000;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th>Header column 1</th>
+      <th>Header column 2</th>
+      <th>Header column 3</th>
+      <th>Header column 4</th>
+    </tr>
+    <tr>
+      <td>Row 2 - Item 1</td>
+      <td>Row 2 - Item 2</td>
+      <td>
+        <strong>Row 2: Nested Table 1</strong>
+        <table class="nested-table">
+          <tr>
+            <th>Row 1 Header</th>
+            <td>item</td>
+          </tr>
+          <tr>
+            <th>Row 2 Header</th>
+            <td>item</td>
+          </tr>
+          <tr>
+            <th>Row 2 Header</th>
+            <td>item</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        Row 2 - Item 4<br>
+        A second line
+      </td>
+    </tr>
+    <tr>
+      <td>Row 3 - Item 1</td>
+      <td>Row 3 - Item 2</td>
+      <td>Row 4 - Item 3</td>
+      <td>Row 3 - Item 3</td>
+    </tr>
+    <tr>
+      <td>Row 4 - Item 1</td>
+      <td>Row 4 - Item 2</td>
+      <td>Row 4 - Item 3</td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
