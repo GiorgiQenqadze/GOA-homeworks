@@ -1,0 +1,55 @@
+/* ზოგადი სტილი ყველა ღილაკისთვის */
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* წითელი ღილაკი */
+.red-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.red-button:hover {
+  background-color: #c0392b;
+}
+
+/* მწვანე ღილაკი */
+.green-button {
+  background-color: #2ecc71;
+  color: white;
+  font-weight: bold;
+}
+
+.green-button:hover {
+  background-color: #27ae60;
+}
+
+/* ლურჯი ღილაკი */
+.blue-button {
+  background-color: #3498db;
+  color: white;
+  font-style: italic;
+}
+
+.blue-button:hover {
+  background-color: #2980b9;
+}
+
+/* ჩრდილიანი ღილაკი */
+.shadow-button {
+  background-color: #9b59b6;
+  color: white;
+  box-shadow: 4px 4px 10px gray;
+  text-transform: uppercase;
+}
+
+.shadow-button:hover {
+  background-color: #8e44ad;
+  box-shadow: 6px 6px 12px #666;
+}

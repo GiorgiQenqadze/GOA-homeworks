@@ -1,0 +1,67 @@
+<!--შექმენით 1 html-ის ფაილი, რომელშიც თავისმხრივ შექმნით რამდენიმე სათაურს (h1), თქვენი დავალებაა გასტილოთ ეს სათაურები internal css-ის მეშვეობით. გამოიყენეთ css-ში მთლიანად ნასწავლი მასალა.-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Internal CSS სათაურები</title>
+  <style>
+    /* ყველა h1 ელემენტს აქვს საერთო სტილი */
+    h1 {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* პირველი სათაურის უნიკალური გაფორმება */
+    #title1 {
+      color: white;
+      background-color: darkred;
+      font-size: 30px;
+      border: 2px solid black;
+    }
+
+    /* მეორე სათაურის უნიკალური გაფორმება */
+    #title2 {
+      color: navy;
+      background-color: #e0e0ff;
+      font-size: 28px;
+      text-transform: uppercase;
+      border-bottom: 3px dashed navy;
+    }
+
+    /* მესამე სათაურის უნიკალური გაფორმება */
+    #title3 {
+      color: green;
+      background-color: #eaffea;
+      font-size: 26px;
+      font-style: italic;
+      box-shadow: 2px 2px 5px gray;
+    }
+
+    /* მეოთხე სათაურის უნიკალური გაფორმება */
+    #title4 {
+      color: purple;
+      background-color: #fce6ff;
+      font-size: 32px;
+      text-shadow: 2px 2px 4px #999;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title1">ეს არის პირველი სათაური</h1>
+  <h1 id="title2">ეს არის მეორე სათაური</h1>
+  <h1 id="title3">ეს არის მესამე სათაური</h1>
+  <h1 id="title4">ეს არის მეოთხე სათაური</h1>
+
+</body>
+</html>
