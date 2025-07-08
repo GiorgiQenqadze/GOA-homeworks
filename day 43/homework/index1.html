@@ -1,0 +1,52 @@
+<!-- შექმენით div ტიპის ელემენტი, რომელშიც თავისმხრივ ჩასვამთ სხვადასხვა html-ის ელემენტებს. თქვენი დავალებაა მიწვდეთ style inheritance-ს მეშვეობით ელემენტებს და გასტილოთ ისინი ინდივიდუალურად.-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Inheritance</title>
+
+  <style>
+    /* მშობელი div-ის სტილი */
+    .container {
+      color: darkblue;              /* მემკვიდრეობით გადაეცემა შვილ ელემენტებს */
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 2px solid gray;
+    }
+
+    /* ინდივიდუალური სტილი h1 ელემენტისთვის */
+    h1 {
+      color: darkred; /* ეს გადაფარავს მშობლისგან მიღებულ ფერს */
+    }
+
+    /* ინდივიდუალური სტილი <span> ელემენტისთვის */
+    span {
+      font-weight: bold;
+      color: green;
+    }
+
+    /* ინდივიდუალური სტილი <a> ბმულისთვის */
+    a {
+      text-decoration: none;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>სათაური div-ის შიგნით</h1>
+    <p>ეს არის პარაგრაფი, რომელიც იღებს მემკვიდრეობით <strong>ფერს</strong> და შრიფტს მშობელი div-დან.</p>
+    <p>აქ არის <span>გამოყოფილი ტექსტი</span>, რომელსაც ინდივიდუალური სტილი აქვს.</p>
+    <p>გადადი <a href="#">ამ ბმულზე</a> მეტი ინფორმაციისთვის.</p>
+  </div>
+
+</body>
+</html>

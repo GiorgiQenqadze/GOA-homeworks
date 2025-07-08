@@ -1,0 +1,105 @@
+<!--შექმენით ვებ-აიტი ნებისმიერ თემატიზაკე, გამოიყენეთ აქამდე მთლიანად ნასწავლი, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა.-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ჩემი საყვარელი მანქანები</title>
+
+  <style>
+    /* მთლიანი გვერდის სტილი */
+    body {
+      background-color: #f2f2f2;
+      font-family: Georgia, serif;
+      color: #333;
+      text-align: center;
+    }
+
+    /* სათაური */
+    h1 {
+      color: darkblue;
+      font-size: 36px;
+      margin-top: 30px;
+    }
+
+    /* მთავარი კონტეინერი */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    /* თითოეული მანქანის ბლოკი */
+    .car {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* მანქანის სურათი */
+    .car img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* მანქანის აღწერა */
+    .car p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    /* ღილაკი */
+    .car button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .car button:hover {
+      background-color: darkgreen;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>ჩემი საყვარელი მანქანები</h1>
+
+  <div class="container">
+    <div class="car">
+      <h2>BMW M5</h2>
+      <img src="https://www.carscoops.com/wp-content/uploads/2022/11/BMW-M5-1m.jpg" alt="BMW M5">
+      <p>ძლიერი ძრავა და ელეგანტური დიზაინი.</p>
+      <button>Buy</button>
+    </div>
+
+    <div class="car">
+      <h2>Mercedes AMG</h2>
+      <img src="https://cdn.motor1.com/images/mgl/mMxz2R/s1/mercedes-amg-cle-53-unofficial-renderings.jpg" alt="Mercedes AMG">
+      <p>ლუქსი, სიჩქარე და კომფორტი ერთდროულად.</p>
+      <button>Buy</button>
+    </div>
+
+    <div class="car">
+      <h2>Audi RS7</h2>
+      <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1d6gDc.img" alt="Audi RS7">
+      <p>სწრაფი, სერიოზული და სტილური ავტომობილი.</p>
+      <button>Buy</button>
+    </div>
+  </div>
+
+</body>
+</html>
