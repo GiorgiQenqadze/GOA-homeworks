@@ -1,0 +1,60 @@
+<!--შექმენით 1 div ელემენტი, რომელშიც გექნებათ სათაური, 3 პარაგრაფი, ღილაკი. თქვენი დავალებაა წამოღოთ სათაური და ღილაკი, ხოლო შემდეგ გასტილოთ ისინი id selector-ების დახმარებით, პარაგრაფებს კი მიეცით ერთნაირი class selector-ი და გასტილეთ ისინი ერთნაირად.-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ID და Class Selector</title>
+  <style>
+    #main-title {
+      color: navy;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .para {
+      color: #333;
+      font-size: 18px;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    #main-button {
+      display: block;
+      margin: 20px auto;
+      background-color: darkgreen;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #main-button:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1 id="main-title">სათაური</h1>
+
+    <p class="para">პირველი პარაგრაფი</p>
+    <p class="para">მეორე პარაგრაფი</p>
+    <p class="para">მესამე პარაგრაფი</p>
+
+    <button id="main-button">დაჭირე აქ</button>
+  </div>
+
+</body>
+</html>
