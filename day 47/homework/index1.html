@@ -1,0 +1,49 @@
+<!--ჩამოთვალეთ css priority-ს ყველა დონე, ახსენეთ რომელი რომელ ადგილს იკავებს იერარქიაში და მოიყვანეთ მაგალითებიც.-->
+
+
+
+
+
+<!-- CSS Priority-ის მაგალითი ერთდროულად ერთ ფაილში -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Priority იერარქია</title>
+  <style>
+    /* 5. ელემენტ selector – ყველაზე დაბალი პრიორიტეტი */
+    p {
+      color: black;
+    }
+
+    /* 4. class selector – უფრო მაღალი პრიორიტეტი */
+    .myClass {
+      color: orange;
+    }
+
+    /* 3. ID selector – უფრო მაღალი პრიორიტეტი class-ზე */
+    #myId {
+      color: green;
+    }
+
+    /* 1. !important – ყველაზე მაღალი პრიორიტეტი */
+    .importantText {
+      color: red !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 6. ბრაუზერის default სტილი ან მემკვიდრეობა – ყველაზე დაბალი -->
+  <p> ეს პარაგრაფი იღებს ელემენტ selector-ს – შავი ფერი</p>
+
+  <p class="myClass">ეს პარაგრაფი იღებს class selector-ს – ფორთოხლისფერი</p>
+
+  <p id="myId"> ეს პარაგრაფი იღებს ID selector-ს – მწვანე</p>
+
+  <p style="color: blue;"> ეს პარაგრაფი იღებს Inline style-ს – ლურჯი</p>
+
+  <p class="importantText" style="color: blue;">ეს პარაგრაფი იღებს !important სტილს – წითელი</p>
+
+</body>
+</html>

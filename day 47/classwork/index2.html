@@ -1,0 +1,49 @@
+<!--ვებ-საიტზე შემოიტანეთ 4 ცალი h1-ი, ყველა h1-ი გასტილეთ ერთი და იგივე სტილით element selector-ების მეშვეობით, მხოლოდ მეორე h1-ს უკვე გადაეცით class selector-ი და გასტილეთ იგი სხვანაირად, მესამე h1-ს გადაეცით id selector-ი და გასტილეთ იგი id-ის მეშვეობით, ხოლო ბოლო h1-ის გასასტილად გამოიყენეთ style ატრიბუტი ანუ inline css-ი.-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>H1 Selector Example</title>
+  <style>
+    /* ყველა h1-ის საერთო სტილი – element selector */
+    h1 {
+      color: darkblue;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    /* class selector – მეორე h1-სთვის */
+    .highlighted {
+      color: orange;
+      font-style: italic;
+    }
+
+    /* id selector – მესამე h1-სთვის */
+    #specialTitle {
+      color: crimson;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>პირველი სათაური (საერთო სტილი)</h1>
+
+  <h1 class="highlighted">მეორე სათაური (class სტილი)</h1>
+
+  <h1 id="specialTitle">მესამე სათაური (id სტილი)</h1>
+
+  <h1 style="color: green; font-weight: bold; background-color: #e0ffe0;">
+    მეოთხე სათაური (inline სტილი)
+  </h1>
+
+</body>
+</html>

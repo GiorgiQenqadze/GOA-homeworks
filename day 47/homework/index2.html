@@ -1,0 +1,123 @@
+<!--შექმენით დიდ ვებ-საიტი ნებისმიერ თემატიკაზე, გამოიყენეთ მთლიანად, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა.-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Movie Gallery</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0; padding: 20px;
+    color: #333;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .movie-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  .movie-card img {
+    width: 100%;
+    display: block;
+  }
+  .movie-content {
+    padding: 15px;
+  }
+  .movie-content h3 {
+    margin: 0 0 10px 0;
+  }
+  .movie-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Movie Gallery</h1>
+  <p>Quick overview of popular movies</p>
+</header>
+
+<div class="movie-grid">
+
+  <a href="https://www.imdb.com/title/tt13345606/" target="_blank" rel="noopener noreferrer">
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/From_title_card.jpg" alt="FROM" />
+      <div class="movie-content">
+        <h3>FROM</h3>
+        <p>Mysterious town traps everyone who enters; fight for survival and escape.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.imdb.com/title/tt0317219/" target="_blank" rel="noopener noreferrer">
+    <div class="movie-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.di65oNxu46VoLgbmE11RGAHaFj?pid=Api&P=0&h=220" alt="CARS" />
+      <div class="movie-content">
+        <h3>CARS</h3>
+        <p>Lightning McQueen learns the true meaning of friendship in Radiator Springs.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.imdb.com/title/tt1109624/" target="_blank" rel="noopener noreferrer">
+    <div class="movie-card">
+      <img src="https://nafilmu.cz/wp-content/uploads/2015/05/Paddington-in-bath.jpg" alt="PADDINGTON" />
+      <div class="movie-content">
+        <h3>PADDINGTON</h3>
+        <p>A young bear finds a new home with the Brown family in London.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer">
+    <div class="movie-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.jVVUF1D1uEuSPvQtvM5uXgHaLH?pid=Api&P=0&h=220"width="400" alt="INTERSTELLAR" />
+      <div class="movie-content">
+        <h3>INTERSTELLAR</h3>
+        <p>Explorers travel through a wormhole to save humanity.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.imdb.com/title/tt0499549/" target="_blank" rel="noopener noreferrer">
+    <div class="movie-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.2VhxzF0tQHhH8CFuOQu3qgHaK-?pid=Api&P=0&h=220" alt="AVATAR" />
+      <div class="movie-content">
+        <h3>AVATAR</h3>
+        <p>A Marine torn between orders and protecting Pandora's world.</p>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
