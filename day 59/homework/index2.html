@@ -1,0 +1,60 @@
+<!--ივარჯიშეთ margin და padding-ების გამოყენებაზე, გააკეთეთ მაგალიტები.-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Margin და Padding მაგალითი</title>
+  <style>
+    /* --- საერთო სტილი --- */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* ყუთი padding-ით */
+    .box-padding {
+      background-color: #ffcc99;
+      padding: 30px;   /* შიგნიდან სივრცე */
+      width: 200px;
+      text-align: center;
+      margin-bottom: 20px;  /* ქვემოთ სივრცე სხვა ელემენტთან */
+    }
+
+    /* ყუთი margin-ით */
+    .box-margin {
+      background-color: #99ccff;
+      margin: 30px;   /* გარშემო სივრცე */
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* ყუთი padding და margin ერთად */
+    .box-both {
+      background-color: #99ff99;
+      padding: 20px;
+      margin: 20px;
+      width: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Padding მაგალითი</h2>
+  <div class="box-padding">ეს ყუთი აქვს <strong>padding</strong></div>
+
+  <h2>Margin მაგალითი</h2>
+  <div class="box-margin">ეს ყუთი აქვს <strong>margin</strong></div>
+
+  <h2>Margin + Padding ერთად</h2>
+  <div class="box-both">ეს ყუთი აქვს <strong>margin და padding</strong></div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!--ივარჯიშეთ form-ების შექმნაზე და მათი შემდეგ გასტილვაზე, შეეცადეთ გააკეთოთ დახვეწილი დიზაინით -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>რეგისტრაციის ფორმა</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    
+    .form-group input::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+
+    
+    .form-group input:focus {
+      border-color: #667eea;
+      box-shadow: 0px 0px 8px rgba(102, 126, 234, 0.7);
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #5643cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>რეგისტრაცია</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="შეიყვანეთ სახელი">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="შეიყვანეთ ელ. ფოსტა">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="შეიყვანეთ პაროლი">
+      </div>
+      <button type="submit" class="btn">გაგზავნა</button>
+    </form>
+  </div>
+</body>
+</html>

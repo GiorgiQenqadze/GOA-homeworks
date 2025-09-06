@@ -1,0 +1,196 @@
+<!--შექმენით ვებ-საიტი ნებისმიერი თემატიკის შესახებ, გამოიყენეთ აქამდე, განსაკუთრებით ბოლო გაკვეთილზე ახსნილი მასალა-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Cooking Recipes</title>
+  <style>
+    /* --- ზოგადი სტილი --- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff5e6;
+      color: #333;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #ff704d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #ff9966;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff200;
+    }
+
+    /* --- Main --- */
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* --- Recipe cards --- */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;           /* Box Model: border-radius */
+      border: 2px solid #ff704d;     /* Box Model: border */
+      padding: 15px;                  /* Box Model: padding */
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);   /* hover ეფექტი */
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* --- Form --- */
+    .form-container {
+      margin-top: 40px;
+      background: #ffe6cc;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ff704d;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    /* ::placeholder */
+    .form-container input::placeholder,
+    .form-container textarea::placeholder {
+      color: #b36b00;
+      font-style: italic;
+    }
+
+    /* :focus */
+    .form-container input:focus,
+    .form-container textarea:focus {
+      border-color: #ff3300;
+      box-shadow: 0 0 8px rgba(255,51,0,0.6);
+      outline: none;
+    }
+
+    .btn {
+      background: #ff704d;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e65c33;
+    }
+
+    footer {
+      background: #ff704d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cooking Recipes 🍳</h1>
+  <p>გაიგე ახალი რეცეპტები და სამზარეულოს საიდუმლოებები</p>
+</header>
+
+<nav>
+  <a href="#">მთავარი</a>
+  <a href="#">რეცეპტები</a>
+  <a href="#">კონტაქტი</a>
+</nav>
+
+<main>
+  <h2>პოპულარული რეცეპტები</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/250/150?random=1" alt="პასტა">
+      <h3>პასტა კარიბის სოუსით</h3>
+      <p>სწრაფი და გემრიელი იტალიური კერძი გემრიელი სოუსით.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/250/150?random=2" alt="კარტოფილი">
+      <h3>ვეგეტარიანული კარტოფილი</h3>
+      <p>გაგრილებული კარტოფილი შემწვარი ბოსტნეულით.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/250/150?random=3" alt="სუპი">
+      <h3>ქათმის სუპი</h3>
+      <p>გაგრილებული სუპი, იდეალური ცივ ამინდებში.</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>დაგვიკავშირდი</h2>
+    <form>
+      <input type="text" placeholder="თქვენი სახელი">
+      <input type="email" placeholder="ელ.ფოსტა">
+      <textarea placeholder="შეტყობინება" rows="4"></textarea>
+      <button type="submit" class="btn">გაგზავნა</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Cooking Recipes | ყველა უფლება დაცულია</p>
+</footer>
+
+</body>
+</html>
